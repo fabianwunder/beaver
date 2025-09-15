@@ -1,0 +1,15 @@
+BEAVER, short for "Better Evaluate A Very Efficient Rational" is a special function library for fast and robust evaluaion of logarithms, polylogaruthms and similar functions appearing in high energy physics codes.
+Implementation is in C++ in double precission as header-only files.
+Functions implemented so far are:
+
+- the inverse tangent arctan(x) as beaver::atan(x)
+- the inverse tangent integral, Ti_2(x) as beaver::atanint(x)
+- the dilogarithm Li_2(x) as beaver::dilog(x)
+- the (natural) logarithm ln(x) as beaver::log(x)
+- the (natural) logarithm (for argument near 1) ln(1+x) as beaver::log1p(x)
+- the power x^n as beaver::pow(x,n) (for integer n)
+- the single-valued dilogarithm L_2(x) as beaver::svdilog(x)
+- the trilogarithm Li3_3(x) as beaver::trilog(x)
+
+To use all beaver functions include the header in your C++ code as
+#include beaver.hpp
