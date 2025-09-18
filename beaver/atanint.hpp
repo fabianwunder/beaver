@@ -1,5 +1,5 @@
-#ifndef BEAVER_ARCTANINT_HPP
-#define BEAVER_ARCTANINT_HPP
+#ifndef BEAVER_ATANINT_HPP
+#define BEAVER_ATANINT_HPP
 #include "log.hpp"
 #include "config.hpp"
 #include <cmath>
@@ -18,7 +18,7 @@ namespace beaver {
         double x2=x*x;
         return x-1.0/9*x2*x;
     }
-  BEAVER_NODISCARD inline double  arctanint(double x) noexcept {
+  BEAVER_NODISCARD inline double  atanint(double x) noexcept {
     double taylorswitch=1e-4;//switch up to which an expansion about x=0 or x=1 is used. Guarantees precission for small y.
     double invtaylorswitch=1/taylorswitch;
     //Catch non-finite input
