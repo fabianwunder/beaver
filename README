@@ -1,4 +1,4 @@
-BEAVER, short for "Better Evaluate A Very Efficient Rational" is a special function library for fast and robust evaluaion of logarithms, polylogaruthms and similar functions appearing in high energy physics codes.
+BEAVER, short for "Better Evaluate A Very Efficient Rational" is a special function library for fast and robust evaluaion of logarithms, polylogarithms and similar functions appearing in high energy physics codes.
 Implementation is in C++ in double precission as header-only files.
 Functions implemented so far are:
 
@@ -12,4 +12,4 @@ Functions implemented so far are:
 - the trilogarithm Li3_3(x) as beaver::trilog(x)
 
 To use all beaver functions include the header in your C++ code as
-#include beaver.hpp
+#include "beaver.hpp"
