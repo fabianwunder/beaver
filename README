@@ -13,3 +13,6 @@ Functions implemented so far are:
 
 To use all beaver functions include the header in your C++ code as
 #include "beaver.hpp"
+
+
+When using BEAVER in your scientific work, please cite arXiv:2508.00693.
