@@ -27,7 +27,7 @@ Include all BEAVER functions in your project:
 ```cpp
 #include "beaver.hpp"
 
-
+---
 
 ## Citation
 
