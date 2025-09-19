@@ -1,0 +1,38 @@
+# BEAVER
+
+**BEAVER** — *Better Evaluate A Very Efficient Rational* — is a special function library for **fast and robust evaluation** of logarithms, polylogarithms, and related functions appearing in high-energy physics codes.  
+
+The library is implemented in **C++**, double precision, as **header-only** files for easy integration into your projects.  
+See [Citation](#citation) for how to reference BEAVER in scientific work.
+
+---
+
+## Implemented functions
+
+- Inverse tangent: `beaver::atan(x)`
+- Inverse tangent integral *Ti₂(x)*: `beaver::atanint(x)`
+- Dilogarithm *Li₂(x)*: `beaver::dilog(x)`
+- Natural logarithm *ln(x)*: `beaver::log(x)`
+- Natural logarithm near unity *ln(1+x)*: `beaver::log1p(x)`
+- Power *xⁿ* (integer exponent): `beaver::pow(x, n)`
+- Single-valued dilogarithm *L₂(x)*: `beaver::svdilog(x)`
+- Trilogarithm *Li₃(x)*: `beaver::trilog(x)`
+
+---
+
+## Usage
+
+Include all BEAVER functions in your project:
+
+```cpp
+#include "beaver.hpp"
+
+
+
+## Citation
+
+If you use **BEAVER** in scientific work, please cite:
+
+J. Haug, F. Wunder  
+*Single-valued representation of unpolarized and polarized semi-inclusive deep inelastic scattering at NNLO*  
+[arXiv:2508.00693](https://arxiv.org/abs/2508.00693)
