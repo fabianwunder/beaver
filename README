@@ -1,18 +1,39 @@
-BEAVER, short for "Better Evaluate A Very Efficient Rational" is a special function library for fast and robust evaluation of logarithms, polylogarithms and similar functions appearing in high energy physics codes.
-Implementation is in C++ in double precission as header-only files.
-Functions implemented so far are:
+# BEAVER
 
-- the inverse tangent arctan(x) as beaver::atan(x)
-- the inverse tangent integral, Ti_2(x) as beaver::atanint(x)
-- the dilogarithm Li_2(x) as beaver::dilog(x)
-- the (natural) logarithm ln(x) as beaver::log(x)
-- the (natural) logarithm (for argument near 1) ln(1+x) as beaver::log1p(x)
-- the power x^n as beaver::pow(x,n) (for integer n)
-- the single-valued dilogarithm L_2(x) as beaver::svdilog(x)
-- the trilogarithm Li3_3(x) as beaver::trilog(x)
+**BEAVER** — *Better Evaluate A Very Efficient Rational* — is a special function library for **fast and robust evaluation** of logarithms, polylogarithms, and related functions appearing in high-energy physics codes.  
 
-To use all beaver functions include the header in your C++ code as
+The library is implemented in **C++**, double precision, as **header-only** files for easy integration into your projects.  
+See [Citation](#citation) for how to reference BEAVER in scientific work.
+
+---
+
+## Implemented functions
+
+- Inverse tangent: `beaver::atan(x)`
+- Inverse tangent integral *Ti₂(x)*: `beaver::atanint(x)`
+- Dilogarithm *Li₂(x)*: `beaver::dilog(x)`
+- Natural logarithm *ln(x)*: `beaver::log(x)`
+- Natural logarithm near unity *ln(1+x)*: `beaver::log1p(x)`
+- Power *xⁿ* (integer exponent): `beaver::pow(x, n)`
+- Single-valued dilogarithm *L₂(x)*: `beaver::svdilog(x)`
+- Trilogarithm *Li₃(x)*: `beaver::trilog(x)`
+
+---
+
+## Usage
+
+Include all BEAVER functions in your project:
+
+```cpp
 #include "beaver.hpp"
 
 
-When using BEAVER in your scientific work, please cite arXiv:2508.00693.
+
+## Citation
+
+If you use **BEAVER** in scientific work, please cite:
+
+> J. Haug, F. Wunder  
+> *Single-valued representation of unpolarized and polarized semi-inclusive deep inelastic scattering at NNLO*  
+> [arXiv:2508.00693](https://arxiv.org/abs/2508.00693)
+
