@@ -36,4 +36,4 @@ If you use **BEAVER** in scientific work, please cite:
 
 J. Haug, F. Wunder  
 *Single-valued representation of unpolarized and polarized semi-inclusive deep inelastic scattering at NNLO*  
-[arXiv:2508.00693](https://arxiv.org/abs/2508.00693)
+PRD 112, 114036 (2025) [arXiv:2505.18109](https://arxiv.org/abs/2505.18109)
